@@ -1,0 +1,753 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TileLaunch — Authentic Metro-Style Tile Launcher for Android</title>
+  <meta name="description" content="Experience the authentic elegance, speed, and typography of a pure Metro-style tile launcher. Designed from scratch for performance with 3D turnstile animations, live tiles, and zero battery drain.">
+  <meta name="keywords" content="metro launcher, tile launcher, live tiles, windows phone launcher, android launcher, turnstile animation, minimalist launcher, nokia launcher, lumia launcher">
+  <meta name="theme-color" content="#FFFFFF">
+  <meta property="og:title" content="TileLaunch — Authentic Metro-Style Tile Launcher for Android">
+  <meta property="og:description" content="Fast, fluid Metro-style tile launcher with live tiles, 3D turnstile animations, and deep customization.">
+  <meta property="og:image" content="assets/hero_banner.jpg">
+  <meta property="og:type" content="website">
+
+  <!-- Favicon / Brand Icon -->
+  <link rel="icon" type="image/png" href="assets/app_logo.png">
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- ======================================================================
+       Header & Navigation
+       ====================================================================== -->
+  <header class="site-header" id="mainHeader">
+    <div class="container nav-container">
+      <a href="#" class="brand" id="brandLogo">
+        <div class="brand-icon">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <span class="brand-name">TileLaunch</span>
+        <span class="brand-badge">v1.0</span>
+      </a>
+
+      <ul class="nav-links">
+        <li><a href="#simulator" class="nav-link">simulator</a></li>
+        <li><a href="#live-tiles" class="nav-link">live tiles</a></li>
+        <li><a href="#colors" class="nav-link">color studio</a></li>
+        <li><a href="#privacy" class="nav-link">privacy</a></li>
+        <li><a href="#faq" class="nav-link">faq</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <!-- Quick Accent Swatches -->
+        <div class="accent-quick-picker" title="Quick Accent Palette" id="navQuickAccents">
+          <div class="swatch-dot" data-accent="mono" style="background:#000000; border:1px solid #777;" title="Monochrome"></div>
+          <div class="swatch-dot active" data-accent="cyan" style="background:#1BA1E2;" title="Cyan"></div>
+          <div class="swatch-dot" data-accent="lime" style="background:#A4C400;" title="Lime"></div>
+          <div class="swatch-dot" data-accent="magenta" style="background:#D80073;" title="Magenta"></div>
+          <div class="swatch-dot" data-accent="orange" style="background:#FA6800;" title="Orange"></div>
+          <div class="swatch-dot" data-accent="teal" style="background:#00ABA9;" title="Teal"></div>
+        </div>
+
+        <!-- Dark/Light Theme Toggle -->
+        <button class="btn-icon-toggle" id="themeToggleBtn" aria-label="Toggle Theme" title="Switch Theme">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="12" cy="12" r="5"/>
+            <path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/>
+          </svg>
+        </button>
+
+        <!-- CTA Button -->
+        <a href="#download" class="btn-primary-sm" id="navCtaBtn">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M3 13.5v5c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2v-5M12 3v13m0 0l-4-4m4 4l4-4"/>
+          </svg>
+          <span>Get TileLaunch</span>
+        </a>
+
+        <!-- Mobile Menu Toggle -->
+        <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Menu">☰</button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- ====================================================================
+         Hero Section
+         ==================================================================== -->
+    <section class="hero-section" id="hero">
+      <div class="container hero-grid">
+        <div class="hero-content">
+
+          <h1 class="hero-title" id="heroHeadline">
+            The Authentic Metro Experience. <br>
+            <span class="accent-text">Reimagined for Android.</span>
+          </h1>
+
+          <p class="hero-description" id="heroSubtitle">
+            Fast, fluid, and battery friendly. Bring back the legendary Swiss typography, fluid 3D turnstile launch animations, and glanceable live tiles — engineered natively with Jetpack Compose at 60 FPS.
+          </p>
+
+          <div class="hero-cta-group">
+            <a href="https://github.com/harisrana001/tileLaunch/releases" target="_blank" class="btn-hero-primary" id="heroGooglePlayBtn">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M3.6 1.9c-.3.3-.5.8-.5 1.4v17.4c0 .6.2 1.1.5 1.4l.1.1 9.7-9.7v-.2L3.7 1.8l-.1.1zM17.4 14.1l-3.3-3.3v-.2l3.3-3.3.1.1 3.9 2.2c1.1.6 1.1 1.6 0 2.2l-3.9 2.3-.1-.1zM13.4 10.6l-3.2-3.2L17.7 3c.8.5 1.4 1.2 1.4 2.1l-5.7 5.5zM13.4 13.4l5.7 5.5c0 .9-.6 1.6-1.4 2.1l-7.5-4.4 3.2-3.2z"/>
+              </svg>
+              <span>Download Free APK v1.0</span>
+            </a>
+
+            <a href="#simulator" class="btn-hero-secondary" id="heroTrySimBtn">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="5" y="2" width="14" height="20" rx="2" ry="2"/>
+                <line x1="12" y1="18" x2="12.01" y2="18"/>
+              </svg>
+              <span>Interactive Phone Demo</span>
+            </a>
+
+            <a href="https://github.com/harisrana001/tileLaunch" target="_blank" class="btn-hero-ghost" id="heroGithubBtn">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/>
+              </svg>
+              <span>GitHub Repo</span>
+            </a>
+          </div>
+
+          <!-- Hero Metrics -->
+          <div class="hero-stats">
+            <div class="stat-item">
+              <div class="stat-val">0%</div>
+              <div class="stat-lbl">Idle Battery Drain</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-val">60<span>fps</span></div>
+              <div class="stat-lbl">Native Compose</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-val">20</div>
+              <div class="stat-lbl">Metro Accents</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-val">100%</div>
+              <div class="stat-lbl">On-Device Privacy</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- ================================================================
+             Centerpiece: Interactive Phone Simulator
+             ================================================================ -->
+        <div class="simulator-container" id="simulator">
+          <!-- Simulator Controls Bar -->
+          <div class="simulator-toolbar">
+            <div class="simulator-modes">
+              <button class="sim-mode-btn active" id="simTabStart" title="Show Start Screen">start</button>
+              <button class="sim-mode-btn" id="simTabApps" title="Show All Apps Drawer">all apps</button>
+            </div>
+            <div class="sim-controls">
+              <button class="sim-tool-btn" id="simEraToggle" title="Toggle Modern 4-Col / Classic 2-Col Layout">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/>
+                  <rect x="3" y="14" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/>
+                </svg>
+              </button>
+              <button class="sim-tool-btn" id="simFlipTilesBtn" title="Flip All Live Tiles">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M21.5 2v6h-6M21.34 15.57a10 10 0 1 1-.57-8.38l5.67-5.67"/>
+                </svg>
+              </button>
+              <button class="sim-tool-btn" id="simSoundToggle" title="Tactile Sound Feedback On/Off">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"/>
+                  <path d="M19.07 4.93a10 10 0 0 1 0 14.14M15.54 8.46a5 5 0 0 1 0 7.07"/>
+                </svg>
+              </button>
+            </div>
+          </div>
+
+          <!-- Phone Bezel -->
+          <div class="phone-mockup-wrap">
+            <div class="phone-device" id="phoneMockup">
+              <div class="phone-screen">
+                <!-- Phone Top Status Bar -->
+                <div class="phone-status-bar">
+                  <span id="phoneClock">11:04 AM</span>
+                  <div class="status-icons">
+                    <span>5G</span>
+                    <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor">
+                      <path d="M12 3c-4.97 0-9 4.03-9 9 0 2.12.74 4.07 1.97 5.61L12 22l7.03-4.39C20.26 16.07 21 14.12 21 12c0-4.97-4.03-9-9-9z"/>
+                    </svg>
+                    <span>100%</span>
+                  </div>
+                </div>
+
+                <!-- Phone Screens Carousel / Slider -->
+                <div class="phone-screens-slider" id="phoneScreensSlider">
+                  
+                  <!-- Page 1: Start Screen -->
+                  <div class="phone-screen-page" id="phonePageStart">
+                    <div class="screen-header">
+                      <h2 class="screen-title">start</h2>
+                      <span class="screen-nav-hint" id="simNavHint" title="Swipe to Apps">all apps &gt;</span>
+                    </div>
+
+                    <!-- Tiles Grid -->
+                    <div class="tiles-grid" id="phoneTilesGrid">
+                      
+                      <!-- 1. Live Weather Tile (Wide 4x2) -->
+                      <div class="metro-tile tile-wide flip-tile-wrapper" id="weatherTileWrapper" title="Weather Live Tile (Flips every 5s)">
+                        <div class="flip-tile-inner">
+                          <div class="flip-face flip-front" style="background:var(--tile-bg);">
+                            <div style="display:flex; justify-content:space-between; align-items:flex-start;">
+                              <div>
+                                <div class="weather-temp">19°</div>
+                                <div class="weather-city">London</div>
+                              </div>
+                              <span class="tile-icon">⛅</span>
+                            </div>
+                            <div style="display:flex; justify-content:space-between; align-items:flex-end;">
+                              <span class="weather-condition">Partly Cloudy • H: 22° L: 14°</span>
+                              <span style="font-size:0.6rem; opacity:0.8;">Open-Meteo</span>
+                            </div>
+                          </div>
+                          <div class="flip-face flip-back">
+                            <div style="font-size:0.75rem; font-weight:700;">Weather Forecast</div>
+                            <div style="display:flex; justify-content:space-between; font-size:0.72rem; margin: auto 0;">
+                              <div>Thu: 21° ☀️</div>
+                              <div>Fri: 18° 🌧️</div>
+                              <div>Sat: 23° 🌤️</div>
+                            </div>
+                            <div style="font-size:0.65rem; opacity:0.8;">Wind 8 km/h • Humidity 55%</div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <!-- 2. Phone Call Tile (Medium 2x2) -->
+                      <div class="metro-tile tile-medium" title="Phone Tile">
+                        <span class="tile-icon">📞</span>
+                        <div class="tile-label">phone</div>
+                        <span class="tile-badge">2</span>
+                      </div>
+
+                      <!-- 3. Messages Tile (Medium 2x2) -->
+                      <div class="metro-tile tile-medium tile-messages" title="Messages Tile">
+                        <span class="tile-icon">💬</span>
+                        <div class="tile-label">messages</div>
+                        <span class="tile-badge">5</span>
+                      </div>
+
+                      <!-- 4. Live Calendar Tile (Wide 4x2) -->
+                      <div class="metro-tile tile-wide flip-tile-wrapper" id="calendarTileWrapper" title="Calendar Live Tile (Flips)">
+                        <div class="flip-tile-inner">
+                          <div class="flip-face flip-front" style="background:var(--tile-bg);">
+                            <div style="display:flex; justify-content:space-between; align-items:center;">
+                              <div>
+                                <div class="calendar-day-name">Wednesday</div>
+                                <div class="calendar-day-num">14</div>
+                              </div>
+                              <span class="tile-icon">📅</span>
+                            </div>
+                            <div class="calendar-event">Next: 2:00 PM • Lumia Architecture Sprint</div>
+                          </div>
+                          <div class="flip-face flip-back">
+                            <div style="font-size:0.75rem; font-weight:700;">Upcoming Agenda</div>
+                            <div style="font-size:0.75rem; line-height:1.3; margin: auto 0;">
+                              <div>• 2:00 PM: Metro UI Review</div>
+                              <div>• 4:30 PM: Turnstile Physics Test</div>
+                            </div>
+                            <div class="tile-label">calendar</div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <!-- 5. Live Photos Tile (Wide 4x2) -->
+                      <div class="metro-tile tile-wide" style="padding:0;" title="Photos Live Tile (Slideshow)">
+                        <div class="photo-tile-bg" id="photoLiveTileBg" style="background-image:url('assets/sample_nature.jpg');"></div>
+                        <div class="photo-tile-overlay"></div>
+                        <div class="flip-face" style="position:relative; z-index:2; height:100%;">
+                          <span class="tile-icon" style="text-shadow:0 1px 3px rgba(0,0,0,0.8);">🖼️</span>
+                          <span class="photo-tile-text">photos • memories</span>
+                        </div>
+                      </div>
+
+                      <!-- 6. Spotify Music Tile (Medium 2x2) -->
+                      <div class="metro-tile tile-medium tile-spotify" title="Spotify Brand Tile">
+                        <span class="tile-icon">🎵</span>
+                        <div>
+                          <div style="font-size:0.65rem; opacity:0.85;">Now Playing</div>
+                          <div style="font-size:0.75rem; font-weight:700; white-space:nowrap; overflow:hidden; text-overflow:ellipsis;">Synthwave Breeze</div>
+                        </div>
+                        <div class="tile-label">spotify</div>
+                      </div>
+
+                      <!-- 7. Mail Tile (Small 1x1) -->
+                      <div class="metro-tile tile-small" title="Mail">
+                        <span class="tile-icon">✉️</span>
+                      </div>
+
+                      <!-- 8. Camera Tile (Small 1x1) -->
+                      <div class="metro-tile tile-small" title="Camera">
+                        <span class="tile-icon">📷</span>
+                      </div>
+
+                      <!-- 9. Chrome / Browser Tile (Small 1x1) -->
+                      <div class="metro-tile tile-small" title="Browser">
+                        <span class="tile-icon">🌐</span>
+                      </div>
+
+                      <!-- 10. Settings Tile (Small 1x1) -->
+                      <div class="metro-tile tile-small" title="Settings">
+                        <span class="tile-icon">⚙️</span>
+                      </div>
+
+                      <!-- 11. YouTube Tile (Medium 2x2) -->
+                      <div class="metro-tile tile-medium tile-youtube" title="YouTube Brand Tile">
+                        <span class="tile-icon">▶️</span>
+                        <div class="tile-label">youtube</div>
+                      </div>
+
+                      <!-- 12. Store Tile (Medium 2x2) -->
+                      <div class="metro-tile tile-medium" title="Store Tile">
+                        <span class="tile-icon">🛍️</span>
+                        <div class="tile-label">store</div>
+                      </div>
+
+                    </div>
+                  </div>
+
+                  <!-- Page 2: All Apps Drawer -->
+                  <div class="phone-screen-page" id="phonePageApps">
+                    <div class="screen-header">
+                      <h2 class="screen-title">all apps</h2>
+                    </div>
+
+                    <!-- Live App Search Bar -->
+                    <div class="app-search-input-wrap">
+                      <input type="text" id="appSearchInput" class="app-search-input" placeholder="search apps..." autocomplete="off">
+                    </div>
+
+                    <!-- Apps List with Alphabet Headers -->
+                    <div class="apps-list" id="appsListContainer">
+                      <div class="app-letter-header" title="Click to open Letter Jump Matrix">#</div>
+                      <div class="app-list-item"><div class="app-list-icon">7</div><span class="app-list-name">7-Zip Archive</span></div>
+
+                      <div class="app-letter-header" title="Click to open Letter Jump Matrix">C</div>
+                      <div class="app-list-item"><div class="app-list-icon">🧮</div><span class="app-list-name">Calculator</span></div>
+                      <div class="app-list-item"><div class="app-list-icon">📅</div><span class="app-list-name">Calendar</span></div>
+                      <div class="app-list-item"><div class="app-list-icon">📷</div><span class="app-list-name">Camera</span></div>
+                      <div class="app-list-item"><div class="app-list-icon">🌐</div><span class="app-list-name">Chrome</span></div>
+
+                      <div class="app-letter-header" title="Click to open Letter Jump Matrix">G</div>
+                      <div class="app-list-item"><div class="app-list-icon">🖼️</div><span class="app-list-name">Gallery</span></div>
+                      <div class="app-list-item"><div class="app-list-icon">✉️</div><span class="app-list-name">Gmail</span></div>
+
+                      <div class="app-letter-header" title="Click to open Letter Jump Matrix">M</div>
+                      <div class="app-list-item"><div class="app-list-icon">🗺️</div><span class="app-list-name">Maps</span></div>
+                      <div class="app-list-item"><div class="app-list-icon">💬</div><span class="app-list-name">Messages</span></div>
+
+                      <div class="app-letter-header" title="Click to open Letter Jump Matrix">P</div>
+                      <div class="app-list-item"><div class="app-list-icon">📞</div><span class="app-list-name">Phone</span></div>
+                      <div class="app-list-item"><div class="app-list-icon">🛍️</div><span class="app-list-name">Play Store</span></div>
+
+                      <div class="app-letter-header" title="Click to open Letter Jump Matrix">S</div>
+                      <div class="app-list-item"><div class="app-list-icon">⚙️</div><span class="app-list-name">Settings</span></div>
+                      <div class="app-list-item"><div class="app-list-icon">🎵</div><span class="app-list-name">Spotify</span></div>
+
+                      <div class="app-letter-header" title="Click to open Letter Jump Matrix">W</div>
+                      <div class="app-list-item"><div class="app-list-icon">⛅</div><span class="app-list-name">Weather</span></div>
+                      <div class="app-list-item"><div class="app-list-icon">💬</div><span class="app-list-name">WhatsApp</span></div>
+                    </div>
+
+                    <!-- Quick Jump Letter Matrix Modal Overlay -->
+                    <div class="jump-matrix-overlay" id="jumpMatrixOverlay">
+                      <div class="matrix-grid">
+                        <div class="matrix-cell has-apps">#</div>
+                        <div class="matrix-cell">A</div>
+                        <div class="matrix-cell">B</div>
+                        <div class="matrix-cell has-apps">C</div>
+                        <div class="matrix-cell">D</div>
+                        <div class="matrix-cell">E</div>
+                        <div class="matrix-cell">F</div>
+                        <div class="matrix-cell has-apps">G</div>
+                        <div class="matrix-cell">H</div>
+                        <div class="matrix-cell">I</div>
+                        <div class="matrix-cell">J</div>
+                        <div class="matrix-cell">K</div>
+                        <div class="matrix-cell">L</div>
+                        <div class="matrix-cell has-apps">M</div>
+                        <div class="matrix-cell">N</div>
+                        <div class="matrix-cell">O</div>
+                        <div class="matrix-cell has-apps">P</div>
+                        <div class="matrix-cell">Q</div>
+                        <div class="matrix-cell">R</div>
+                        <div class="matrix-cell has-apps">S</div>
+                        <div class="matrix-cell">T</div>
+                        <div class="matrix-cell">U</div>
+                        <div class="matrix-cell">V</div>
+                        <div class="matrix-cell has-apps">W</div>
+                      </div>
+                      <div class="matrix-close-hint">tap any letter to jump, or outside to close</div>
+                    </div>
+
+                  </div>
+
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="sim-hint">
+            <kbd>Click or Tap Tiles</kbd> to test authentic 3D Turnstile tilt &amp; tactile haptics
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         Visual Hero Banner Showcase
+         ==================================================================== -->
+    <section class="hero-banner-section" id="showcase">
+      <div class="container">
+        <div class="banner-card">
+          <img src="assets/hero_banner.jpg" alt="TileLaunch AMOLED live tiles preview" class="banner-img">
+          <div class="banner-overlay">
+            <div class="banner-content">
+              <span class="banner-tag">Pure Swiss Design</span>
+              <h2 class="banner-title">Fast. Fluid. Unapologetically Digital.</h2>
+              <p class="banner-text">
+                Every corner radius, typography scale, and 6dp spacing gap is engineered from the ground up to honor the iconic design language that revolutionized smartphone ergonomics.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ====================================================================
+         Live Tiles Deep Dive
+         ==================================================================== -->
+    <section class="live-tiles-section" id="live-tiles">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-eyebrow">Glanceable Intelligence</span>
+          <h2 class="section-title">dynamic <strong>live tiles</strong></h2>
+          <p class="section-subtitle">
+            Information without clutter. Live Tiles flip in realistic 3D to reveal live weather forecasts, upcoming meetings, and revolving photo memories without opening an app.
+          </p>
+        </div>
+
+        <div class="live-tiles-grid">
+          <!-- Live Tile 1: Weather -->
+          <div class="live-card">
+            <div class="live-demo-box">
+              <div class="tile-demo-interactive" style="display:flex; justify-content:space-between; flex-direction:column;">
+                <div style="display:flex; justify-content:space-between;">
+                  <span style="font-size:1.8rem; font-weight:300;">19°</span>
+                  <span style="font-size:1.5rem;">⛅</span>
+                </div>
+                <div style="display:flex; justify-content:space-between; align-items:flex-end;">
+                  <span style="font-size:0.75rem;">London • H:22° L:14°</span>
+                  <span style="font-size:0.6rem; opacity:0.8;">Open-Meteo</span>
+                </div>
+              </div>
+            </div>
+            <h3 class="bento-title">live weather tile</h3>
+            <p class="bento-desc">
+              Powered by Open-Meteo with zero required API keys. Displays current temperatures, wind speeds, humidity, and upcoming 3-day forecasts with auto-dimming night modes.
+            </p>
+          </div>
+
+          <!-- Live Tile 2: Calendar -->
+          <div class="live-card">
+            <div class="live-demo-box">
+              <div class="tile-demo-interactive" style="display:flex; flex-direction:column; justify-content:space-between;">
+                <div style="display:flex; justify-content:space-between; align-items:center;">
+                  <div>
+                    <div style="font-size:0.75rem; text-transform:uppercase;">Wednesday</div>
+                    <div style="font-size:1.6rem; font-weight:700;">14</div>
+                  </div>
+                  <span style="font-size:1.4rem;">📅</span>
+                </div>
+                <div style="font-size:0.72rem;">2:00 PM: Team Strategy Sprint</div>
+              </div>
+            </div>
+            <h3 class="bento-title">3d flipping calendar tile</h3>
+            <p class="bento-desc">
+              Synchronizes with your local Android calendar provider. Side A features the bold day and date; side B flips to reveal your next agenda item with start time and location.
+            </p>
+          </div>
+
+          <!-- Live Tile 3: Battery Sentinel -->
+          <div class="live-card">
+            <div class="live-demo-box">
+              <div class="battery-sentinel-visual">
+                <div class="battery-gauge">
+                  <div class="battery-fill"></div>
+                </div>
+                <div class="sentinel-stats">STATUS: 0.00% CPU (SLEEP)</div>
+              </div>
+            </div>
+            <h3 class="bento-title">battery sentinel engine</h3>
+            <p class="bento-desc">
+              Our proprietary event-driven scheduler unregisters UI animation tickers the millisecond the screen turns off. Live Tiles never awaken the device while in your pocket.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         20 Metro Accent Color Studio
+         ==================================================================== -->
+    <section class="color-studio-section" id="colors">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-eyebrow">Endless Personalization</span>
+          <h2 class="section-title">curated <strong>20-accent palette</strong></h2>
+          <p class="section-subtitle">
+            Choose from the 20 legendary Metro accent colors. Click any color below to live-recolor the interactive phone simulator!
+          </p>
+        </div>
+
+        <div class="color-studio-container">
+          <!-- 20 Swatch Buttons Grid -->
+          <div class="color-palette-grid" id="colorStudioPalette">
+            <!-- Populated dynamically by app.js -->
+          </div>
+
+          <!-- Active Color Detail Card -->
+          <div class="color-info-card">
+            <div class="color-info-preview" id="studioColorPreview"></div>
+            <h3 class="color-info-title" id="studioAccentTitle">Cyan</h3>
+            <div class="color-info-code" id="studioAccentHex">#1BA1E2 • rgb(27, 161, 226)</div>
+            <p class="color-info-desc" id="studioAccentDesc">
+              The signature electric cyan color that debuted with Nokia Lumia flagship hardware. High contrast, unmistakably bold, and radiant on modern AMOLED displays.
+            </p>
+            <button class="btn-hero-secondary" id="copyHexBtn" style="padding:10px 18px; font-size:0.88rem;">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="9" y="9" width="13" height="13" rx="2" ry="2"/>
+                <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/>
+              </svg>
+              <span>Copy Hex Color</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+    <!-- ====================================================================
+         Privacy Transparency Section
+         ==================================================================== -->
+    <section class="privacy-section" id="privacy">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-eyebrow">Zero Compromise</span>
+          <h2 class="section-title">100% <strong>privacy transparency</strong></h2>
+          <p class="section-subtitle">
+            TileLaunch does not collect, transmit, or monetize your data. Here is exactly why each optional Android permission is requested.
+          </p>
+        </div>
+
+        <div class="privacy-grid">
+          <div class="privacy-card">
+            <div class="privacy-icon">🔔</div>
+            <h4 class="privacy-title">notification access</h4>
+            <p class="privacy-text">
+              Used strictly to compute numeric unread count badges on app tiles. TileLaunch never reads, stores, or transmits the text content of your notifications.
+            </p>
+          </div>
+
+          <div class="privacy-card">
+            <div class="privacy-icon">📍</div>
+            <h4 class="privacy-title">approximate location</h4>
+            <p class="privacy-text">
+              Required only for the Weather Live Tile to fetch temperature data from Open-Meteo. Your coordinates are never uploaded to our servers or shared with advertisers.
+            </p>
+          </div>
+
+          <div class="privacy-card">
+            <div class="privacy-icon">📅</div>
+            <h4 class="privacy-title">calendar read</h4>
+            <p class="privacy-text">
+              Enables the Calendar live tile to display your next scheduled appointment. Event queries run strictly on-device using Android's local CalendarContract.
+            </p>
+          </div>
+
+          <div class="privacy-card">
+            <div class="privacy-icon">🖼️</div>
+            <h4 class="privacy-title">photos &amp; wallpaper</h4>
+            <p class="privacy-text">
+              Allows you to set a custom home screen wallpaper photo and display photo slideshows in the Photos live tile. Zero cloud syncing or remote image uploads.
+            </p>
+          </div>
+
+          <div class="privacy-card">
+            <div class="privacy-icon">🛡️</div>
+            <h4 class="privacy-title">transparent advertising</h4>
+            <p class="privacy-text">
+              Free version includes exactly one non-intrusive interstitial upon completing onboarding. Zero banner or screen clutter. Pro unlocks a 100% ad-free experience.
+            </p>
+          </div>
+        </div>
+
+        <!-- Privacy Actions: Routing to Full Legal Page -->
+        <div style="margin-top: 40px; text-align: center;">
+          <a href="privacy.html" class="btn-hero-primary" style="font-size: 0.95rem; padding: 14px 32px;">
+            <span>Read Full Privacy Policy Document</span>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M5 12h14M12 5l7 7-7 7"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         Frequently Asked Questions
+         ==================================================================== -->
+    <section class="faq-section" id="faq">
+      <div class="container">
+        <div class="section-header" style="text-align:center;">
+          <span class="section-eyebrow">Got Questions?</span>
+          <h2 class="section-title">frequently asked <strong>questions</strong></h2>
+        </div>
+
+        <div class="faq-list">
+          <div class="faq-item">
+            <button class="faq-question">
+              <span>Will TileLaunch drain my phone's battery?</span>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              No. TileLaunch was built from day one around lifecycle awareness. When your screen turns off or another full-screen app opens, all Live Tile flip animations and background timers stop immediately. There are zero background wakeups while your phone is resting in your pocket.
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question">
+              <span>Is TileLaunch free, or does it require a subscription?</span>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              TileLaunch is free to download and use with full tile customization and 3D turnstiles. Free users experience a single non-intrusive ad after completing first-time onboarding. If you want Live Tiles, all 20 colors, and the Cover Screen, TileLaunch Pro is available as a single one-time lifetime purchase with zero ads forever. There are no recurring subscriptions.
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question">
+              <span>Can I customize tile sizes and arrangements?</span>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              Yes! You can long-press any tile on the home screen to enter edit mode. You can resize tiles between Small (1x1), Medium (2x2), and Wide (4x2), cycle custom accent colors per tile, unpin tiles, or drag them to reflow surrounding tiles automatically.
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question">
+              <span>How does the Weather Live Tile work?</span>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              The Weather tile queries the open-source Open-Meteo API using your approximate device coordinates. It requires no API key signups and caches forecasts in a local Room SQLite database with smart WorkManager background synchronization.
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question">
+              <span>Can I backup and share my home screen layout?</span>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              Yes! TileLaunch Pro includes complete JSON Layout Backup &amp; Restore. You can export your curated tile arrangement to Google Drive, Telegram, or email and restore it anytime on any Android device.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         Closing Download CTA
+         ==================================================================== -->
+    <section class="closing-cta-section" id="download">
+      <div class="container">
+        <div class="cta-box">
+          <h2 class="cta-title">Give your phone the interface it deserves.</h2>
+          <p class="cta-desc">
+            Rediscover the joy of glancing at your phone without notification spam and generic icons. Download TileLaunch today.
+          </p>
+
+          <div class="cta-buttons">
+            <a href="https://github.com/harisrana001/tileLaunch/releases" target="_blank" class="btn-hero-primary" style="font-size:1.05rem; padding:16px 36px;">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M3.6 1.9c-.3.3-.5.8-.5 1.4v17.4c0 .6.2 1.1.5 1.4l.1.1 9.7-9.7v-.2L3.7 1.8l-.1.1zM17.4 14.1l-3.3-3.3v-.2l3.3-3.3.1.1 3.9 2.2c1.1.6 1.1 1.6 0 2.2l-3.9 2.3-.1-.1zM13.4 10.6l-3.2-3.2L17.7 3c.8.5 1.4 1.2 1.4 2.1l-5.7 5.5zM13.4 13.4l5.7 5.5c0 .9-.6 1.6-1.4 2.1l-7.5-4.4 3.2-3.2z"/>
+              </svg>
+              <span>Download on Google Play</span>
+            </a>
+
+            <a href="https://github.com/harisrana001/tileLaunch/releases" target="_blank" class="btn-hero-secondary" style="font-size:1.05rem; padding:16px 28px;">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z"/>
+              </svg>
+              <span>Download Direct APK</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ======================================================================
+       Footer
+       ====================================================================== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <div class="brand">
+            <div class="brand-icon">
+              <span></span><span></span><span></span><span></span>
+            </div>
+            <span class="brand-name">TileLaunch</span>
+          </div>
+          <p class="footer-brand-desc">
+            Authentic, fluid Metro-style tile launcher for modern Android smartphones. Crafted with Jetpack Compose for speed, elegance, and complete privacy.
+          </p>
+        </div>
+
+        <div>
+          <h5 class="footer-col-title">Product</h5>
+          <ul class="footer-links">
+            <li><a href="#simulator" class="footer-link">Phone Simulator</a></li>
+            <li><a href="#live-tiles" class="footer-link">Dynamic Live Tiles</a></li>
+            <li><a href="#colors" class="footer-link">20-Accent Studio</a></li>
+            <li><a href="#privacy" class="footer-link">Privacy Transparency</a></li>
+            <li><a href="#faq" class="footer-link">FAQ</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h5 class="footer-col-title">Legal</h5>
+          <ul class="footer-links">
+            <li><a href="privacy.html" class="footer-link" style="color:var(--metro-cyan); font-weight:600;">Privacy Policy</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>&copy; 2026 TileLaunch. Open-source launcher inspired by classic Metro aesthetics.</div>
+        <div>Fast • Fluid • Zero Telemetry</div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>

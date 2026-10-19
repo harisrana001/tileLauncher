@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy Policy — TileLaunch</title>
+  <meta name="description" content="Official Privacy Policy and Data Safety disclosures for TileLaunch (Metro Tile Home Launcher) for Android.">
+  <meta name="theme-color" content="#FFFFFF">
+  <link rel="icon" type="image/png" href="assets/app_logo.png">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="TileLaunch Privacy Policy">
+  <meta property="og:description" content="Official Privacy Policy and Data Safety disclosures for TileLaunch. Zero personal data collection, local processing, and transparent ad disclosure.">
+  <meta property="og:image" content="assets/app_logo.png">
+  <meta property="og:type" content="website">
+
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    .policy-container {
+      max-width: 920px;
+      margin: 0 auto;
+      padding: 120px 24px 80px;
+    }
+    .policy-header {
+      margin-bottom: 36px;
+      padding-bottom: 24px;
+      border-bottom: 2px solid var(--border-subtle);
+    }
+    .policy-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 6px 14px;
+      background: var(--bg-surface);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-sm);
+      font-size: 0.85rem;
+      font-family: var(--font-mono);
+      font-weight: 600;
+      letter-spacing: 0.5px;
+      text-transform: uppercase;
+      color: var(--text-secondary);
+      margin-bottom: 16px;
+    }
+    .policy-badge .status-dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: #008A00;
+      box-shadow: 0 0 8px rgba(0, 138, 0, 0.4);
+    }
+    .policy-title {
+      font-size: 2.75rem;
+      font-weight: 800;
+      line-height: 1.15;
+      letter-spacing: -0.03em;
+      margin-bottom: 16px;
+    }
+    .policy-meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      font-size: 0.95rem;
+      color: var(--text-tertiary);
+      font-family: var(--font-mono);
+    }
+    .policy-meta span strong {
+      color: var(--text-primary);
+    }
+    .app-identity-card {
+      display: flex;
+      align-items: center;
+      gap: 24px;
+      padding: 24px;
+      background: var(--bg-card);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-md);
+      margin-bottom: 40px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.04);
+    }
+    .app-identity-logo {
+      width: 84px;
+      height: 84px;
+      border-radius: 18px;
+      object-fit: cover;
+      box-shadow: 0 8px 18px rgba(0, 0, 0, 0.15);
+      border: 2px solid var(--border-subtle);
+      flex-shrink: 0;
+    }
+    .app-identity-info h3 {
+      font-size: 1.25rem;
+      font-weight: 700;
+      margin-bottom: 4px;
+    }
+    .app-identity-info p {
+      font-size: 0.9rem;
+      color: var(--text-secondary);
+      margin-bottom: 12px;
+    }
+    .logo-download-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 6px 12px;
+      background: var(--bg-surface);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-sm);
+      font-size: 0.8rem;
+      font-weight: 600;
+      color: var(--text-primary);
+      text-decoration: none;
+      transition: background var(--transition-fast);
+    }
+    .logo-download-btn:hover {
+      background: var(--bg-card-hover);
+    }
+    .policy-summary-callout {
+      background: rgba(27, 161, 226, 0.08);
+      border-left: 4px solid #1BA1E2;
+      padding: 20px 24px;
+      border-radius: 0 var(--radius-md) var(--radius-md) 0;
+      margin-bottom: 48px;
+    }
+    .policy-summary-callout h4 {
+      font-size: 1.05rem;
+      font-weight: 700;
+      color: var(--text-primary);
+      margin-bottom: 8px;
+    }
+    .policy-summary-callout p {
+      font-size: 0.95rem;
+      color: var(--text-secondary);
+      line-height: 1.6;
+      margin: 0;
+    }
+    .policy-body h2 {
+      font-size: 1.7rem;
+      font-weight: 800;
+      letter-spacing: -0.02em;
+      margin: 48px 0 16px;
+      padding-top: 16px;
+      border-top: 1px solid var(--border-subtle);
+    }
+    .policy-body h3 {
+      font-size: 1.25rem;
+      font-weight: 700;
+      margin: 28px 0 10px;
+      color: var(--text-primary);
+    }
+    .policy-body p {
+      font-size: 1rem;
+      line-height: 1.7;
+      color: var(--text-secondary);
+      margin-bottom: 16px;
+    }
+    .policy-body ul {
+      margin: 0 0 20px 24px;
+      color: var(--text-secondary);
+    }
+    .policy-body li {
+      margin-bottom: 10px;
+      line-height: 1.6;
+    }
+    .policy-body strong {
+      color: var(--text-primary);
+    }
+    .data-table-wrapper {
+      overflow-x: auto;
+      margin: 24px 0 32px;
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-md);
+      background: var(--bg-card);
+    }
+    .data-table {
+      width: 100%;
+      border-collapse: collapse;
+      text-align: left;
+      font-size: 0.9rem;
+    }
+    .data-table th, .data-table td {
+      padding: 14px 18px;
+      border-bottom: 1px solid var(--border-subtle);
+    }
+    .data-table th {
+      background: var(--bg-surface);
+      font-weight: 700;
+      color: var(--text-primary);
+      text-transform: uppercase;
+      font-size: 0.75rem;
+      letter-spacing: 0.5px;
+      font-family: var(--font-mono);
+    }
+    .data-table tr:last-child td {
+      border-bottom: none;
+    }
+    .tag-local {
+      display: inline-block;
+      padding: 3px 8px;
+      border-radius: var(--radius-sm);
+      font-size: 0.75rem;
+      font-weight: 600;
+      background: rgba(0, 138, 0, 0.12);
+      color: #008A00;
+    }
+    .tag-admob {
+      display: inline-block;
+      padding: 3px 8px;
+      border-radius: var(--radius-sm);
+      font-size: 0.75rem;
+      font-weight: 600;
+      background: rgba(250, 104, 0, 0.12);
+      color: #FA6800;
+    }
+    .tag-none {
+      display: inline-block;
+      padding: 3px 8px;
+      border-radius: var(--radius-sm);
+      font-size: 0.75rem;
+      font-weight: 600;
+      background: var(--bg-surface);
+      color: var(--text-tertiary);
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ======================================================================
+       Header & Navigation
+       ====================================================================== -->
+  <header class="site-header" id="mainHeader">
+    <div class="container nav-container">
+      <a href="index.html" class="brand" id="brandLogo">
+        <div class="brand-icon">
+          <span></span><span></span><span></span><span></span>
+        </div>
+        <span class="brand-name">TileLaunch</span>
+        <span class="brand-badge">Privacy</span>
+      </a>
+
+      <ul class="nav-links">
+        <li><a href="index.html" class="nav-link">Home</a></li>
+        <li><a href="index.html#simulator" class="nav-link">Simulator</a></li>
+        <li><a href="index.html#live-tiles" class="nav-link">Live Tiles</a></li>
+        <li><a href="index.html#download" class="nav-link">Get App</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <!-- Dark/Light Theme Toggle -->
+        <button class="btn-icon-toggle" id="themeToggleBtn" aria-label="Toggle Theme" title="Switch Theme">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="12" cy="12" r="5"/>
+            <path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/>
+          </svg>
+        </button>
+
+        <a href="index.html" class="btn-primary-sm">
+          <span>← Back to Home</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- ======================================================================
+       Privacy Content
+       ====================================================================== -->
+  <div class="policy-container">
+    <header class="policy-header">
+      <div class="policy-badge">
+        <span class="status-dot"></span>
+        <span>Google Play &amp; AdMob Policy Compliant</span>
+      </div>
+      <h1 class="policy-title">Privacy Policy for TileLaunch</h1>
+      <div class="policy-meta">
+        <span>Application: <strong>TileLaunch: Metro Tile Home</strong></span>
+        <span>Package: <strong>com.tilelaunch.launcher</strong></span>
+        <span>Effective: <strong>October 2026</strong></span>
+      </div>
+    </header>
+
+    <!-- App Identity Card with Downloadable Icon -->
+    <div class="app-identity-card">
+      <img src="assets/app_logo.png" alt="TileLaunch Official App Icon" class="app-identity-logo">
+      <div class="app-identity-info">
+        <h3>TileLaunch Android Application</h3>
+        <p>Replacement Android Home Screen launcher built natively with Jetpack Compose.</p>
+        <a href="assets/app_logo.png" download="tilelaunch_app_logo_512.png" class="logo-download-btn">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z"/>
+          </svg>
+          <span>Download Official 512×512 Icon Asset</span>
+        </a>
+      </div>
+    </div>
+
+    <!-- Summary Box -->
+    <div class="policy-summary-callout">
+      <h4>Privacy-First Philosophy</h4>
+      <p>
+        TileLaunch ("we", "our", or "us") is designed with device autonomy at its core. We do not track, profile, log, or sell your personal data. All core launcher features—including installed apps navigation, notification counts, calendar schedules, and photo live tiles—process exclusively on your device. Free tier users experience a single non-intrusive interstitial advertisement upon completing first-run onboarding, while Pro users enjoy a 100% ad-free experience.
+      </p>
+    </div>
+
+    <div class="policy-body">
+      <h2>1. Permissions Requested &amp; Local Processing</h2>
+      <p>
+        TileLaunch requests only the permissions strictly required to execute its duties as your primary device launcher:
+      </p>
+
+      <h3>1.1 Installed Applications (<code>LauncherApps</code> &amp; Queries)</h3>
+      <p>
+        <strong>Purpose:</strong> As an Android home screen replacement, TileLaunch queries your device's installed applications to display them in the Start screen tile grid and the All Apps alphabetical drawer, and to launch them upon selection.
+      </p>
+      <p>
+        <strong>Data Handling:</strong> App names, icons, and package identifiers are inspected strictly in device memory. They are never transmitted, logged, or uploaded to any remote server.
+      </p>
+
+      <h3>1.2 Notification Access (<code>NotificationListenerService</code>)</h3>
+      <p>
+        <strong>Purpose:</strong> Used strictly to calculate numeric unread notification count badges on corresponding tiles (such as missed phone calls, unread messaging, or email totals).
+      </p>
+      <p>
+        <strong>Data Handling:</strong> TileLaunch inspects only package identifiers to aggregate count integers. TileLaunch <strong>never</strong> reads, inspects, stores, or transmits notification message text, sender identities, or notification contents.
+      </p>
+
+      <h3>1.3 Approximate Coarse Location (<code>ACCESS_COARSE_LOCATION</code>)</h3>
+      <p>
+        <strong>Purpose:</strong> Requested optionally when you configure the Weather Live Tile. This allows the launcher to fetch temperature and forecast data from the open-source, keyless Open-Meteo API.
+      </p>
+      <p>
+        <strong>Data Handling:</strong> Approximate coordinates are sent directly to the Open-Meteo endpoint via encrypted HTTPS. Your location is never logged, stored in any external database, or shared with advertising partners. If permission is denied, weather functionality can be skipped or configured to fallback coordinates.
+      </p>
+
+      <h3>1.4 Calendar Events (<code>READ_CALENDAR</code>)</h3>
+      <p>
+        <strong>Purpose:</strong> Used optionally to display the next scheduled agenda appointment on the 3D flipping Calendar Live Tile.
+      </p>
+      <p>
+        <strong>Data Handling:</strong> Calendar queries operate locally via Android's built-in <code>CalendarContract</code>. Event titles and dates remain exclusively on your device and are never sent externally.
+      </p>
+
+      <h3>1.5 Photos &amp; Wallpaper (<code>READ_MEDIA_IMAGES</code>)</h3>
+      <p>
+        <strong>Purpose:</strong> Allows you to pick local photo wallpapers for your Start screen and Cover screen, and to cycle image slideshows on the Photos Live Tile.
+      </p>
+      <p>
+        <strong>Data Handling:</strong> Image files are accessed locally via the Android system photo picker or MediaStore. No images or metadata are ever uploaded to cloud servers.
+      </p>
+
+      <h2>2. Third-Party Advertising &amp; Consent (Google AdMob &amp; UMP)</h2>
+      <p>
+        TileLaunch is committed to clean, transparent advertising practices without cluttering your daily smartphone workflow:
+      </p>
+      <ul>
+        <li>
+          <strong>Single Placement:</strong> In the Free version of TileLaunch, exactly one interstitial advertisement may be shown upon completing the initial setup/onboarding flow.
+        </li>
+        <li>
+          <strong>Banned Placements:</strong> Advertisements are strictly prohibited on your Start screen, All Apps drawer, live tiles, settings screen, and Cover screen. You will never encounter banner ads or popups during normal phone use.
+        </li>
+        <li>
+          <strong>100% Ad-Free Pro Tier:</strong> Users who upgrade to TileLaunch Pro enjoy a permanently ad-free experience. All ad requests and SDK initializations are completely disabled when Pro is active.
+        </li>
+        <li>
+          <strong>European Regulations (GDPR) &amp; UMP:</strong> For users in the European Economic Area (EEA) and the United Kingdom, TileLaunch integrates the Google User Messaging Platform (UMP) SDK. A consent dialog is presented prior to requesting ads, giving you complete autonomy over personalized vs. non-personalized advertising choices.
+        </li>
+        <li>
+          <strong>Ad Network Data Collection:</strong> Ad requests are serviced by the Google Mobile Ads (AdMob) SDK. Google may collect device identifiers (such as Android Advertising ID / AAID), IP address, and technical diagnostic telemetry in accordance with <a href="https://policies.google.com/privacy" target="_blank" rel="noopener" style="color:var(--metro-cyan); text-decoration:underline;">Google's Privacy Policy</a>. TileLaunch does not share any of your local app lists, notifications, photos, or calendar data with Google AdMob.
+        </li>
+      </ul>
+
+      <h2>3. Google Play Billing (TileLaunch Pro)</h2>
+      <p>
+        TileLaunch offers an optional one-time in-app lifetime purchase ("TileLaunch Pro") to unlock all 20 accent colors, the Classic 2-column layout era pack, Live Tiles, and Cover screen.
+      </p>
+      <p>
+        <strong>Payment Processing:</strong> All transactions are executed securely through the official Google Play Billing library. TileLaunch never receives, handles, or stores your credit card details, banking credentials, or billing address.
+      </p>
+
+      <h2>4. Google Play Data Safety Summary</h2>
+      <p>
+        The following table summarizes how data is handled according to the Google Play Data Safety declaration:
+      </p>
+
+      <div class="data-table-wrapper">
+        <table class="data-table">
+          <thead>
+            <tr>
+              <th>Data Type</th>
+              <th>Collection</th>
+              <th>Shared With</th>
+              <th>Purpose</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Approximate Location</strong></td>
+              <td><span class="tag-local">Local / Ephemeral</span></td>
+              <td><span class="tag-none">None (Weather API only)</span></td>
+              <td>Weather Live Tile forecast lookup</td>
+            </tr>
+            <tr>
+              <td><strong>Installed App Packages</strong></td>
+              <td><span class="tag-local">On-Device Only</span></td>
+              <td><span class="tag-none">Never Shared</span></td>
+              <td>Launcher app drawer &amp; tile shortcuts</td>
+            </tr>
+            <tr>
+              <td><strong>Notification Badges</strong></td>
+              <td><span class="tag-local">On-Device Only</span></td>
+              <td><span class="tag-none">Never Shared</span></td>
+              <td>Numeric tile badge counts</td>
+            </tr>
+            <tr>
+              <td><strong>Calendar &amp; Photos</strong></td>
+              <td><span class="tag-local">On-Device Only</span></td>
+              <td><span class="tag-none">Never Shared</span></td>
+              <td>Live Tile slideshows &amp; schedule</td>
+            </tr>
+            <tr>
+              <td><strong>Device or Other IDs (AAID)</strong></td>
+              <td><span class="tag-admob">Collected by AdMob</span></td>
+              <td><span class="tag-admob">Google AdMob</span></td>
+              <td>Free-tier onboarding interstitial ad</td>
+            </tr>
+            <tr>
+              <td><strong>Purchase History</strong></td>
+              <td><span class="tag-local">Google Play</span></td>
+              <td><span class="tag-none">Google Play Billing</span></td>
+              <td>Pro license entitlement verification</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h2>5. Data Retention &amp; Deletion</h2>
+      <p>
+        All user preferences, layout grid arrangements, selected accent colors, and cached weather forecasts are stored locally in private SQLite (Room) databases and encrypted DataStore files on your phone.
+      </p>
+      <p>
+        Because TileLaunch does not operate user accounts or external cloud databases, <strong>uninstalling the TileLaunch application immediately and permanently erases all associated local data</strong> from your device.
+      </p>
+
+      <h2>6. Security</h2>
+      <p>
+        All network communications (including Open-Meteo weather lookups and Google Play purchase token validations) are strictly enforced over encrypted Transport Layer Security (TLS/HTTPS).
+      </p>
+
+      <h2>7. Developer Contact &amp; Inquiries</h2>
+      <p>
+        If you have any questions, suggestions, or concerns regarding this Privacy Policy, please contact us:
+      </p>
+      <ul>
+        <li><strong>Support Email:</strong> <a href="mailto:support@tilelaunch.app" style="color:var(--metro-cyan);">support@tilelaunch.app</a></li>
+        <li><strong>GitHub Repository:</strong> <a href="https://github.com/harisrana001/tileLaunch" target="_blank" rel="noopener" style="color:var(--metro-cyan);">github.com/harisrana001/tileLaunch</a></li>
+        <li><strong>Issue Tracker:</strong> <a href="https://github.com/harisrana001/tileLaunch/issues" target="_blank" rel="noopener" style="color:var(--metro-cyan);">Report an issue on GitHub</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- ======================================================================
+       Footer
+       ====================================================================== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <div class="brand">
+            <div class="brand-icon">
+              <span></span><span></span><span></span><span></span>
+            </div>
+            <span class="brand-name">TileLaunch</span>
+          </div>
+          <p class="footer-brand-desc">
+            Authentic, fluid Metro-style tile launcher for modern Android smartphones. Crafted with Jetpack Compose for speed, elegance, and privacy.
+          </p>
+        </div>
+
+        <div>
+          <h5 class="footer-col-title">Navigation</h5>
+          <ul class="footer-links">
+            <li><a href="index.html" class="footer-link">Home</a></li>
+            <li><a href="index.html#simulator" class="footer-link">Simulator</a></li>
+            <li><a href="index.html#live-tiles" class="footer-link">Live Tiles</a></li>
+            <li><a href="index.html#colors" class="footer-link">Color Studio</a></li>
+            <li><a href="index.html#faq" class="footer-link">FAQ</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h5 class="footer-col-title">Legal</h5>
+          <ul class="footer-links">
+            <li><a href="privacy.html" class="footer-link" style="color:var(--metro-cyan); font-weight:600;">Privacy Policy</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>&copy; 2026 TileLaunch. Open-source launcher inspired by classic Metro aesthetics.</div>
+        <div>Fast • Fluid • Transparent Privacy</div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Theme Switcher for Privacy Page
+    const themeToggleBtn = document.getElementById('themeToggleBtn');
+    const htmlElem = document.documentElement;
+
+    const savedTheme = localStorage.getItem('tilelaunch_theme');
+    if (savedTheme) {
+      htmlElem.setAttribute('data-theme', savedTheme);
+    }
+
+    if (themeToggleBtn) {
+      themeToggleBtn.addEventListener('click', () => {
+        const current = htmlElem.getAttribute('data-theme') || 'light';
+        const next = current === 'dark' ? 'light' : 'dark';
+        htmlElem.setAttribute('data-theme', next);
+        localStorage.setItem('tilelaunch_theme', next);
+      });
+    }
+  </script>
+</body>
+</html>
