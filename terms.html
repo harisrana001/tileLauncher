@@ -1,0 +1,736 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Terms of Service — TileLaunch</title>
+  <meta name="description" content="Terms of Service and End User License Agreement (EULA) for TileLaunch (Metro Tile Home Launcher) for Android.">
+  <meta name="theme-color" content="#FFFFFF">
+  <link rel="icon" type="image/png" href="assets/app_logo.png">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="TileLaunch Terms of Service">
+  <meta property="og:description" content="Terms of Service and End User License Agreement for TileLaunch Android application. Transparent, open-source, and Google Play compliant.">
+  <meta property="og:image" content="assets/app_logo.png">
+  <meta property="og:type" content="website">
+
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    :root {
+      --accent: #000000;
+      --metro-cyan: #1BA1E2;
+      --font-main: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      --font-mono: 'JetBrains Mono', monospace;
+      --bg-primary: #FFFFFF;
+      --bg-surface: #F8F9FA;
+      --bg-card: #FFFFFF;
+      --bg-card-hover: #F1F3F5;
+      --border-subtle: rgba(0, 0, 0, 0.09);
+      --text-primary: #000000;
+      --text-secondary: #555555;
+      --text-tertiary: #888888;
+      --radius-sm: 4px;
+      --radius-md: 8px;
+      --transition-fast: 0.18s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    [data-theme="dark"] {
+      --accent: #FFFFFF;
+      --bg-primary: #000000;
+      --bg-surface: #0a0a0a;
+      --bg-card: #111111;
+      --bg-card-hover: #171717;
+      --border-subtle: rgba(255, 255, 255, 0.12);
+      --text-primary: #ffffff;
+      --text-secondary: #a0a0a0;
+      --text-tertiary: #666666;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root:not([data-theme="light"]) {
+        --accent: #FFFFFF;
+        --bg-primary: #000000;
+        --bg-surface: #0a0a0a;
+        --bg-card: #111111;
+        --bg-card-hover: #171717;
+        --border-subtle: rgba(255, 255, 255, 0.12);
+        --text-primary: #ffffff;
+        --text-secondary: #a0a0a0;
+        --text-tertiary: #666666;
+      }
+    }
+
+    .policy-container {
+      max-width: 920px;
+      margin: 0 auto;
+      padding: 120px 24px 80px;
+    }
+    .policy-header {
+      margin-bottom: 36px;
+      padding-bottom: 24px;
+      border-bottom: 2px solid var(--border-subtle);
+    }
+    .policy-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 6px 14px;
+      background: var(--bg-surface);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-sm);
+      font-size: 0.85rem;
+      font-family: var(--font-mono);
+      font-weight: 600;
+      letter-spacing: 0.5px;
+      text-transform: uppercase;
+      color: var(--text-secondary);
+      margin-bottom: 16px;
+    }
+    .policy-badge .status-dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: #008A00;
+      box-shadow: 0 0 8px rgba(0, 138, 0, 0.4);
+    }
+    .policy-title {
+      font-size: 2.75rem;
+      font-weight: 800;
+      line-height: 1.15;
+      letter-spacing: -0.03em;
+      margin-bottom: 16px;
+    }
+    .policy-meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      font-size: 0.95rem;
+      color: var(--text-tertiary);
+      font-family: var(--font-mono);
+    }
+    .policy-meta span strong {
+      color: var(--text-primary);
+    }
+    .app-identity-card {
+      display: flex;
+      align-items: center;
+      gap: 24px;
+      padding: 24px;
+      background: var(--bg-card);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-md);
+      margin-bottom: 40px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.04);
+    }
+    .app-identity-logo {
+      width: 84px;
+      height: 84px;
+      border-radius: 18px;
+      object-fit: cover;
+      box-shadow: 0 8px 18px rgba(0, 0, 0, 0.15);
+      border: 2px solid var(--border-subtle);
+      flex-shrink: 0;
+    }
+    .app-identity-info h3 {
+      font-size: 1.25rem;
+      font-weight: 700;
+      margin-bottom: 4px;
+    }
+    .app-identity-info p {
+      font-size: 0.9rem;
+      color: var(--text-secondary);
+      margin-bottom: 12px;
+    }
+    .logo-download-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 6px 12px;
+      background: var(--bg-surface);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-sm);
+      font-size: 0.8rem;
+      font-weight: 600;
+      color: var(--text-primary);
+      text-decoration: none;
+      transition: background var(--transition-fast);
+    }
+    .logo-download-btn:hover {
+      background: var(--bg-card-hover);
+    }
+    .policy-summary-callout {
+      background: rgba(27, 161, 226, 0.08);
+      border-left: 4px solid #1BA1E2;
+      padding: 20px 24px;
+      border-radius: 0 var(--radius-md) var(--radius-md) 0;
+      margin-bottom: 48px;
+    }
+    .policy-summary-callout h4 {
+      font-size: 1.05rem;
+      font-weight: 700;
+      color: var(--text-primary);
+      margin-bottom: 8px;
+    }
+    .policy-summary-callout p {
+      font-size: 0.95rem;
+      color: var(--text-secondary);
+      line-height: 1.6;
+      margin: 0;
+    }
+    .policy-body h2 {
+      font-size: 1.7rem;
+      font-weight: 800;
+      letter-spacing: -0.02em;
+      margin: 48px 0 16px;
+      padding-top: 16px;
+      border-top: 1px solid var(--border-subtle);
+    }
+    .policy-body h3 {
+      font-size: 1.25rem;
+      font-weight: 700;
+      margin: 28px 0 10px;
+      color: var(--text-primary);
+    }
+    .policy-body p {
+      font-size: 1rem;
+      line-height: 1.7;
+      color: var(--text-secondary);
+      margin-bottom: 16px;
+    }
+    .policy-body ul, .policy-body ol {
+      margin: 0 0 20px 24px;
+      color: var(--text-secondary);
+    }
+    .policy-body li {
+      margin-bottom: 10px;
+      line-height: 1.6;
+    }
+    .policy-body strong {
+      color: var(--text-primary);
+    }
+    .policy-body code {
+      font-family: var(--font-mono);
+      font-size: 0.88em;
+      padding: 2px 6px;
+      background: var(--bg-surface);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-sm);
+      color: var(--text-primary);
+    }
+    .policy-body a {
+      color: var(--metro-cyan);
+      text-decoration: underline;
+      text-underline-offset: 3px;
+    }
+    .policy-body a:hover {
+      opacity: 0.85;
+    }
+    .data-table-wrapper {
+      overflow-x: auto;
+      margin: 24px 0 32px;
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-md);
+      background: var(--bg-card);
+    }
+    .data-table {
+      width: 100%;
+      border-collapse: collapse;
+      text-align: left;
+      font-size: 0.9rem;
+    }
+    .data-table th, .data-table td {
+      padding: 14px 18px;
+      border-bottom: 1px solid var(--border-subtle);
+    }
+    .data-table th {
+      background: var(--bg-surface);
+      font-weight: 700;
+      color: var(--text-primary);
+      text-transform: uppercase;
+      font-size: 0.75rem;
+      letter-spacing: 0.5px;
+      font-family: var(--font-mono);
+    }
+    .data-table tr:last-child td {
+      border-bottom: none;
+    }
+    .tag-free {
+      display: inline-block;
+      padding: 3px 8px;
+      border-radius: var(--radius-sm);
+      font-size: 0.75rem;
+      font-weight: 600;
+      background: rgba(0, 138, 0, 0.12);
+      color: #008A00;
+    }
+    .tag-pro {
+      display: inline-block;
+      padding: 3px 8px;
+      border-radius: var(--radius-sm);
+      font-size: 0.75rem;
+      font-weight: 600;
+      background: rgba(27, 161, 226, 0.15);
+      color: #1BA1E2;
+    }
+    .tag-admob {
+      display: inline-block;
+      padding: 3px 8px;
+      border-radius: var(--radius-sm);
+      font-size: 0.75rem;
+      font-weight: 600;
+      background: rgba(250, 104, 0, 0.12);
+      color: #FA6800;
+    }
+    .tag-none {
+      display: inline-block;
+      padding: 3px 8px;
+      border-radius: var(--radius-sm);
+      font-size: 0.75rem;
+      font-weight: 600;
+      background: var(--bg-surface);
+      color: var(--text-tertiary);
+    }
+    .legal-clause {
+      background: var(--bg-surface);
+      border-left: 3px solid var(--border-active, #777);
+      padding: 16px 20px;
+      border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+      margin: 16px 0 24px;
+      font-size: 0.95rem;
+      line-height: 1.65;
+    }
+
+    @media (max-width: 768px) {
+      .policy-container {
+        padding: 96px 16px 60px;
+      }
+      .policy-title {
+        font-size: 2rem;
+      }
+      .app-identity-card {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 16px;
+      }
+      .policy-meta {
+        flex-direction: column;
+        gap: 8px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ======================================================================
+       Header & Navigation
+       ====================================================================== -->
+  <header class="site-header" id="mainHeader">
+    <div class="container nav-container">
+      <a href="index.html" class="brand" id="brandLogo">
+        <div class="brand-icon">
+          <span></span><span></span><span></span><span></span>
+        </div>
+        <span class="brand-name">TileLaunch</span>
+        <span class="brand-badge">Terms</span>
+      </a>
+
+      <ul class="nav-links">
+        <li><a href="index.html" class="nav-link">Home</a></li>
+        <li><a href="index.html#simulator" class="nav-link">Simulator</a></li>
+        <li><a href="index.html#live-tiles" class="nav-link">Live Tiles</a></li>
+        <li><a href="privacy.html" class="nav-link">Privacy</a></li>
+        <li><a href="index.html#download" class="nav-link">Get App</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <!-- Dark/Light Theme Toggle -->
+        <button class="btn-icon-toggle" id="themeToggleBtn" aria-label="Toggle Theme" title="Switch Theme">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="12" cy="12" r="5"/>
+            <path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/>
+          </svg>
+        </button>
+
+        <a href="index.html" class="btn-primary-sm">
+          <span>← Back to Home</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- ======================================================================
+       Terms of Service Content
+       ====================================================================== -->
+  <div class="policy-container">
+    <header class="policy-header">
+      <div class="policy-badge">
+        <span class="status-dot"></span>
+        <span>Google Play Compliant &amp; Open Source</span>
+      </div>
+      <h1 class="policy-title">Terms of Service for TileLaunch</h1>
+      <div class="policy-meta">
+        <span>Application: <strong>TileLaunch: Metro Tile Home</strong></span>
+        <span>Package: <strong>com.tilelaunch.launcher</strong></span>
+        <span>Developer: <strong>Haris Rana (harisrana001)</strong></span>
+        <span>Effective Date: <strong>November 2026</strong></span>
+      </div>
+    </header>
+
+    <!-- App Identity Card -->
+    <div class="app-identity-card">
+      <img src="assets/app_logo.png" alt="TileLaunch Official App Icon" class="app-identity-logo">
+      <div class="app-identity-info">
+        <h3>TileLaunch Android Application</h3>
+        <p>Metro-style tile home launcher built natively with Jetpack Compose for Android.</p>
+        <a href="https://github.com/harisrana001/tileLaunch" target="_blank" rel="noopener" class="logo-download-btn">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
+          </svg>
+          <span>View Source on GitHub</span>
+        </a>
+      </div>
+    </div>
+
+    <!-- Summary Box -->
+    <div class="policy-summary-callout">
+      <h4>Overview &amp; Agreement Summary</h4>
+      <p>
+        Welcome to <strong>TileLaunch</strong> ("TileLaunch", "we", "us", or "our"), an Android home screen replacement application developed by <strong>Haris Rana</strong> (harisrana001). By downloading, installing, accessing, or using TileLaunch from Google Play, GitHub Releases, or any authorized channel, you ("User" or "you") agree to be bound by these Terms of Service ("Terms") and our <a href="privacy.html" style="color:var(--metro-cyan); text-decoration:underline;">Privacy Policy</a>. TileLaunch requires no account or login, collects no personal telemetry or data on external servers, processes your information locally on your device, and offers an optional one-time lifetime Pro upgrade with zero recurring subscriptions.
+      </p>
+    </div>
+
+    <div class="policy-body">
+      <!-- 1. Acceptance of Terms -->
+      <h2>1. Acceptance of Terms</h2>
+      <p>
+        These Terms of Service constitute a legally binding agreement between you and the developer, Haris Rana. By downloading, installing, copying, launching, or setting TileLaunch as your default home application, you acknowledge that you have read, understood, and agree to be bound by these Terms.
+      </p>
+      <p>
+        If you do not agree with any provision of these Terms, you must immediately discontinue using TileLaunch, decline all permissions, and uninstall the application from your device.
+      </p>
+      <p>
+        <strong>Eligibility:</strong> You must be at least the age of majority in your jurisdiction, or possess valid legal parental or guardian consent to enter into these Terms and use the application.
+      </p>
+
+      <!-- 2. License to Use the App -->
+      <h2>2. License to Use the Application</h2>
+      <h3>2.1 License Grant</h3>
+      <p>
+        Subject to your strict compliance with these Terms, Haris Rana grants you a personal, non-exclusive, revocable, non-transferable, and royalty-free limited license to download, install, and execute TileLaunch solely for your personal, non-commercial use on compatible Android smartphones or tablets that you own or control.
+      </p>
+
+      <h3>2.2 Open-Source Codebase &amp; Binaries</h3>
+      <p>
+        TileLaunch is an open-source software project. The source code is hosted and publicly inspectable in the official GitHub repository at <a href="https://github.com/harisrana001/tileLaunch" target="_blank" rel="noopener">github.com/harisrana001/tileLaunch</a> under its applicable open-source license. While the source code may be subject to open-source licensing terms:
+      </p>
+      <ul>
+        <li>Official binary releases distributed through Google Play, including digital signing keys and proprietary in-app purchase entitlements (TileLaunch Pro), remain subject to these Terms and Google Play policies.</li>
+        <li>The name "TileLaunch", the app icon, branding assets, and visual presentation are protected and may not be used to publish misleading, malicious, or deceptive forks that confuse users.</li>
+      </ul>
+
+      <h3>2.3 License Restrictions</h3>
+      <p>
+        You agree that you shall NOT:
+      </p>
+      <ul>
+        <li>Bypass, alter, defeat, disable, or circumvent the license validation mechanisms, Google Play Billing integrations, or anti-tamper safeguards of the application;</li>
+        <li>Modify, recompile, or repackage TileLaunch to inject spyware, unauthorized advertisements, third-party trackers, or malicious code;</li>
+        <li>Distribute modified copies of TileLaunch falsely representing them as official releases produced or endorsed by Haris Rana;</li>
+        <li>Use TileLaunch in any manner that violates applicable local, state, national, or international laws or regulations.</li>
+      </ul>
+
+      <!-- 3. User Responsibilities & Acceptable Use -->
+      <h2>3. User Responsibilities, Permissions &amp; Acceptable Use</h2>
+      <h3>3.1 Role as Android Home Screen Replacement</h3>
+      <p>
+        TileLaunch operates as an Android Home Screen (Launcher) replacement. You acknowledge and understand that configuring TileLaunch as your default launcher modifies how your device presents installed applications, shortcuts, widgets, and navigation gestures. You maintain full control over your device and may revert to your device manufacturer's default launcher at any time via Android <code>System Settings &gt; Apps &gt; Default Apps &gt; Home App</code>.
+      </p>
+
+      <h3>3.2 Permissions &amp; Local On-Device Processing</h3>
+      <p>
+        TileLaunch utilizes the following Android permissions strictly to deliver its core launcher functionality. In accordance with our <a href="privacy.html">Privacy Policy</a>, all processing occurs locally on your device:
+      </p>
+      <ul>
+        <li>
+          <strong>Query Installed Packages (<code>LauncherApps</code>):</strong> Required to scan, list, and launch installed applications on your device in the Start screen grid and the alphabetical app drawer. This data remains in volatile device memory and is never transmitted off your device.
+        </li>
+        <li>
+          <strong>Notification Access (<code>NotificationListenerService</code>):</strong> Used exclusively to calculate numeric unread badge counts on relevant app tiles (e.g., missed calls, unread messages). TileLaunch never reads, stores, or transmits notification message contents or sender details.
+        </li>
+        <li>
+          <strong>Approximate Location (<code>ACCESS_COARSE_LOCATION</code>):</strong> Optional for the Weather Live Tile. When enabled, coarse coordinates are sent directly to the open-source, keyless Open-Meteo weather endpoint via encrypted HTTPS. Your location is never logged, stored in any database, or used for advertising profiling.
+        </li>
+        <li>
+          <strong>Calendar Read Access (<code>READ_CALENDAR</code>):</strong> Optional for the Calendar Live Tile to display upcoming schedule appointments. Calendar events are processed purely on-device via Android's local <code>CalendarContract</code>.
+        </li>
+        <li>
+          <strong>Photos &amp; Storage Access (<code>READ_MEDIA_IMAGES</code>):</strong> Optional for custom photo wallpaper backdrops and the Photos Live Tile slideshow. Images remain exclusively on your device.
+        </li>
+      </ul>
+
+      <h3>3.3 No User Accounts or Server Storage</h3>
+      <p>
+        TileLaunch does not require, host, or support user accounts, passwords, or cloud database storage. All tile configurations, sizes, accent color choices, and custom layouts are saved locally on your device in private SQLite/Room databases and DataStore preferences. You are responsible for maintaining your device backups and configuration exports.
+      </p>
+
+      <!-- 4. In-App Purchases (Pro Version) & Refunds -->
+      <h2>4. In-App Purchases (TileLaunch Pro) &amp; Refund Policy</h2>
+      <p>
+        TileLaunch offers an optional premium upgrade called <strong>TileLaunch Pro</strong>.
+      </p>
+
+      <div class="data-table-wrapper">
+        <table class="data-table">
+          <thead>
+            <tr>
+              <th>Feature / Provision</th>
+              <th>Free Tier</th>
+              <th>TileLaunch Pro</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Pricing Model</strong></td>
+              <td><span class="tag-free">100% Free Forever</span></td>
+              <td><span class="tag-pro">One-Time Lifetime Purchase</span></td>
+            </tr>
+            <tr>
+              <td><strong>Subscription Fees</strong></td>
+              <td><span class="tag-none">No Subscriptions</span></td>
+              <td><span class="tag-none">Zero Recurring Charges</span></td>
+            </tr>
+            <tr>
+              <td><strong>Advertisements</strong></td>
+              <td><span class="tag-admob">1 Interstitial (Post-Onboarding)</span></td>
+              <td><span class="tag-free">100% Permanently Ad-Free</span></td>
+            </tr>
+            <tr>
+              <td><strong>Accent Colors</strong></td>
+              <td>6 Core Vibrant Accents</td>
+              <td><span class="tag-pro">All 20 Authentic Metro Accents</span></td>
+            </tr>
+            <tr>
+              <td><strong>Grid Layout Era Packs</strong></td>
+              <td>Modern 4-Column Grid</td>
+              <td><span class="tag-pro">4-Column + Classic 2-Column Pack</span></td>
+            </tr>
+            <tr>
+              <td><strong>Dynamic Live Tiles</strong></td>
+              <td>Standard Static Tiles</td>
+              <td><span class="tag-pro">Weather, Calendar &amp; Photos Live Tiles</span></td>
+            </tr>
+            <tr>
+              <td><strong>Cover Screen Glance</strong></td>
+              <td>Unavailable</td>
+              <td><span class="tag-pro">Glanceable Clock, Date &amp; Badges</span></td>
+            </tr>
+            <tr>
+              <td><strong>Layout Backup &amp; Share</strong></td>
+              <td>Local Persistence</td>
+              <td><span class="tag-pro">Full JSON Export &amp; Import</span></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h3>4.1 One-Time Lifetime Purchase (No Subscriptions)</h3>
+      <p>
+        TileLaunch Pro is sold exclusively as a <strong>one-time lifetime in-app purchase</strong>. There are no recurring monthly, yearly, or auto-renewing subscription charges. Purchasing Pro unlocks premium features permanently for your Google Play account across all compatible Android devices you own.
+      </p>
+
+      <h3>4.2 Advertising Disclosures for Free Tier</h3>
+      <p>
+        The Free tier of TileLaunch is supported by a single, non-intrusive interstitial advertisement served via Google Mobile Ads (AdMob) strictly upon completing the first-run onboarding sequence. Advertisements are never displayed on your Start screen, All Apps drawer, live tiles, or daily launcher workflow. Purchasing TileLaunch Pro permanently disables all advertisement SDK initializations and requests.
+      </p>
+
+      <h3>4.3 Payment Processing via Google Play</h3>
+      <p>
+        All financial transactions, currency conversions, sales tax calculations, and payment methods are handled exclusively and securely by <strong>Google Play Billing</strong>. Haris Rana does not process, handle, view, or store your credit card numbers, billing addresses, or banking details.
+      </p>
+
+      <h3>4.4 Refund Policy</h3>
+      <p>
+        Because TileLaunch Pro delivers immediate digital access to all premium features upon purchase completion, refunds are governed in accordance with <strong>Google Play's standard refund policies</strong>:
+      </p>
+      <ul>
+        <li>
+          <strong>48-Hour Google Play Window:</strong> In most regions, you may request a refund within 48 hours of purchase directly through your Google Play account order history at <a href="https://play.google.com/store/account/orderhistory" target="_blank" rel="noopener">play.google.com/store/account/orderhistory</a>.
+        </li>
+        <li>
+          <strong>Post-48-Hour Inquiries:</strong> Outside the automated Google Play window, sales are generally final. However, if you experience technical issues restoring your purchase, please contact developer support at <a href="mailto:support@tilelaunch.app">support@tilelaunch.app</a> with your Google Play Order Number (formatted as <code>GPA.xxxx-xxxx-xxxx-xxxxx</code>) for assistance with license verification.
+        </li>
+        <li>
+          <strong>License Restoration:</strong> If you reset your device or switch to a new phone, you can restore your Pro status at zero cost simply by downloading TileLaunch with the same Google account used for the original purchase.
+        </li>
+      </ul>
+
+      <!-- 5. Intellectual Property Rights -->
+      <h2>5. Intellectual Property Rights &amp; Non-Affiliation</h2>
+      <h3>5.1 Authorship &amp; Ownership</h3>
+      <p>
+        TileLaunch, its original source code, UI layouts, animations, vector icons, graphics, and documentation are authored and owned by Haris Rana, subject to open-source licenses governing third-party libraries incorporated into the project.
+      </p>
+
+      <h3>5.2 Non-Affiliation &amp; Trademark Disclaimers</h3>
+      <div class="legal-clause">
+        <p style="margin:0;">
+          <strong>Notice of Independent Development:</strong> TileLaunch is an independent home screen application designed to celebrate clean typography and Metro design aesthetics. TileLaunch is <strong>NOT</strong> affiliated with, associated with, authorized by, endorsed by, or in any way officially connected with Microsoft Corporation, Nokia Corporation, Google LLC, or any of their subsidiaries or affiliates.
+        </p>
+      </div>
+      <p>
+        All product and company names, trademarks, and registered trademarks displayed within the launcher (such as icons and titles of third-party apps installed on your device) are the property of their respective holders. Their appearance in TileLaunch does not imply any affiliation with or endorsement by them, and serves solely to enable you to launch and organize software installed on your hardware.
+      </p>
+
+      <h3>5.3 Third-Party Services</h3>
+      <p>
+        TileLaunch interfaces with the open-source Open-Meteo weather API for optional weather updates. Usage of such external endpoints is subject to their respective terms and operational availability.
+      </p>
+
+      <!-- 6. Disclaimer of Warranties -->
+      <h2>6. Disclaimer of Warranties</h2>
+      <div class="legal-clause">
+        <p style="margin-bottom:12px; font-weight:700; text-transform:uppercase; color:var(--text-primary); letter-spacing:0.5px;">
+          "As-Is" and "As-Available" Provision
+        </p>
+        <p style="margin-bottom:12px;">
+          TO THE MAXIMUM EXTENT PERMITTED UNDER APPLICABLE LAW, TILELAUNCH IS PROVIDED ON AN <strong>"AS IS"</strong> AND <strong>"AS AVAILABLE"</strong> BASIS, WITH ALL FAULTS AND WITHOUT WARRANTY OF ANY KIND. HARIS RANA EXPRESSLY DISCLAIMS ALL WARRANTIES, WHETHER EXPRESS, IMPLIED, STATUTORY, OR OTHERWISE, INCLUDING BUT NOT LIMITED TO THE IMPLIED WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, TITLE, QUIET ENJOYMENT, AND NON-INFRINGEMENT.
+        </p>
+        <p style="margin:0;">
+          WITHOUT LIMITING THE FOREGOING, WE MAKE NO WARRANTY THAT TILELAUNCH WILL MEET YOUR REQUIREMENTS, OPERATE WITHOUT INTERRUPTION, BE SECURE OR DEFECT-FREE, BE COMPATIBLE WITH EVERY ANDROID DEVICE OR CUSTOM MANUFACTURER SKIN (OEM ROM), OR THAT DEFECTS IN SOFTWARE EXECUTION WILL BE CORRECTED.
+        </p>
+      </div>
+
+      <!-- 7. Limitation of Liability -->
+      <h2>7. Limitation of Liability</h2>
+      <div class="legal-clause">
+        <p style="margin-bottom:12px; font-weight:700; text-transform:uppercase; color:var(--text-primary); letter-spacing:0.5px;">
+          Limitation of Damages
+        </p>
+        <p style="margin-bottom:12px;">
+          TO THE FULLEST EXTENT PERMISSIBLE BY APPLICABLE LAW, IN NO EVENT SHALL HARIS RANA, CONTRIBUTORS, OR AFFILIATED DEVELOPERS BE LIABLE FOR ANY INDIRECT, INCIDENTAL, SPECIAL, CONSEQUENTIAL, EXEMPLARY, OR PUNITIVE DAMAGES WHATSOEVER, INCLUDING WITHOUT LIMITATION DAMAGES FOR LOSS OF DATA, DEVICE CORRUPTION, HARDWARE INTERFERENCE, BATTERY DRAINAGE, MISSED CALENDAR APPOINTMENTS, MISSED NOTIFICATIONS, OR LOSS OF GOODWILL, ARISING OUT OF OR IN CONNECTION WITH YOUR USE OR INABILITY TO USE TILELAUNCH.
+        </p>
+        <p style="margin:0;">
+          IN NO EVENT SHALL OUR TOTAL CUMULATIVE LIABILITY TO YOU FOR ALL DAMAGES EXCEED THE ACTUAL AMOUNT PAID BY YOU FOR THE TILELAUNCH PRO IN-APP PURCHASE IN THE TWELVE (12) MONTHS PRECEDING THE CLAIM, OR TEN UNITED STATES DOLLARS ($10.00 USD), WHICHEVER IS GREATER.
+        </p>
+      </div>
+
+      <!-- 8. Changes to These Terms -->
+      <h2>8. Changes to These Terms</h2>
+      <p>
+        We reserve the right, at our sole discretion, to modify, update, or replace these Terms at any time to reflect software updates, legal requirements, or Google Play policy amendments.
+      </p>
+      <p>
+        When revisions are published, we will update the "Effective Date" at the top of this page. Any changes take effect immediately upon posting to this URL. Your continued use of TileLaunch following the posting of revised Terms constitutes your full acceptance of the updated Terms. If you do not agree to the amended terms, you must discontinue using and uninstall the application.
+      </p>
+
+      <!-- 9. Termination & Data Deletion -->
+      <h2>9. Termination &amp; Data Deletion</h2>
+      <p>
+        You may terminate this legal agreement at any time simply by uninstalling TileLaunch from all your devices.
+      </p>
+      <p>
+        <strong>Complete Data Erasure:</strong> Because TileLaunch does not maintain user accounts or transmit your data to remote cloud servers, <strong>uninstalling the application immediately, permanently, and irreversibly deletes all your local grid arrangements, custom accent preferences, and cached live tile contents</strong> from your device storage.
+      </p>
+      <p>
+        We reserve the right to suspend or terminate app distribution, software updates, or support services at any time without prior notice.
+      </p>
+
+      <!-- 10. Governing Law -->
+      <h2>10. Governing Law &amp; Jurisdiction</h2>
+      <p>
+        These Terms and any disputes, claims, or controversies arising out of or related to your use of TileLaunch shall be governed by and construed in accordance with the laws of <strong>[Jurisdiction / Country, e.g., United States / State of California, or Developer's Country of Residence]</strong>, without regard to its conflict of law principles.
+      </p>
+      <p>
+        Any legal suit, action, or proceeding arising out of or related to these Terms shall be instituted exclusively in the competent courts located in <strong>[City / State / Country]</strong>, and each party irrevocably submits to the personal jurisdiction of such courts.
+      </p>
+
+      <!-- 11. Severability & Entire Agreement -->
+      <h2>11. Severability &amp; Entire Agreement</h2>
+      <p>
+        If any provision of these Terms is determined by a court of competent jurisdiction to be invalid, illegal, or unenforceable, that provision shall be enforced to the maximum extent permissible, and the remaining provisions of these Terms shall remain in full force and effect.
+      </p>
+      <p>
+        These Terms, together with our <a href="privacy.html">Privacy Policy</a>, constitute the entire agreement between you and Haris Rana with respect to the TileLaunch application and supersede all prior understandings, agreements, or communications.
+      </p>
+
+      <!-- 12. Contact Information -->
+      <h2>12. Contact Information &amp; Support</h2>
+      <p>
+        If you have questions, feedback, legal inquiries, or support requests regarding TileLaunch or these Terms of Service, please contact us through any of the following channels:
+      </p>
+      <ul>
+        <li><strong>Developer:</strong> Haris Rana (harisrana001)</li>
+        <li><strong>Support Email:</strong> <a href="mailto:support@tilelaunch.app">support@tilelaunch.app</a></li>
+        <li><strong>GitHub Repository:</strong> <a href="https://github.com/harisrana001/tileLaunch" target="_blank" rel="noopener">github.com/harisrana001/tileLaunch</a></li>
+        <li><strong>Issue Tracker:</strong> <a href="https://github.com/harisrana001/tileLaunch/issues" target="_blank" rel="noopener">Report an Issue on GitHub</a></li>
+        <li><strong>Official Webpage:</strong> <a href="https://harisrana001.github.io/tileLauncher/">harisrana001.github.io/tileLauncher</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- ======================================================================
+       Footer
+       ====================================================================== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <div class="brand">
+            <div class="brand-icon">
+              <span></span><span></span><span></span><span></span>
+            </div>
+            <span class="brand-name">TileLaunch</span>
+          </div>
+          <p class="footer-brand-desc">
+            Authentic, fluid Metro-style tile launcher for modern Android smartphones. Crafted with Jetpack Compose for speed, elegance, and privacy.
+          </p>
+        </div>
+
+        <div>
+          <h5 class="footer-col-title">Navigation</h5>
+          <ul class="footer-links">
+            <li><a href="index.html" class="footer-link">Home</a></li>
+            <li><a href="index.html#simulator" class="footer-link">Simulator</a></li>
+            <li><a href="index.html#live-tiles" class="footer-link">Live Tiles</a></li>
+            <li><a href="index.html#colors" class="footer-link">Color Studio</a></li>
+            <li><a href="index.html#faq" class="footer-link">FAQ</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h5 class="footer-col-title">Legal</h5>
+          <ul class="footer-links">
+            <li><a href="privacy.html" class="footer-link">Privacy Policy</a></li>
+            <li><a href="terms.html" class="footer-link" style="color:var(--metro-cyan); font-weight:600;">Terms of Service</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>&copy; 2026 TileLaunch. Open-source launcher inspired by classic Metro aesthetics.</div>
+        <div>Fast • Fluid • Transparent Privacy</div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Theme Switcher for Terms Page
+    const themeToggleBtn = document.getElementById('themeToggleBtn');
+    const htmlElem = document.documentElement;
+
+    const savedTheme = localStorage.getItem('tilelaunch_theme');
+    if (savedTheme) {
+      htmlElem.setAttribute('data-theme', savedTheme);
+    }
+
+    if (themeToggleBtn) {
+      themeToggleBtn.addEventListener('click', () => {
+        const current = htmlElem.getAttribute('data-theme') || 'light';
+        const next = current === 'dark' ? 'light' : 'dark';
+        htmlElem.setAttribute('data-theme', next);
+        localStorage.setItem('tilelaunch_theme', next);
+      });
+    }
+  </script>
+</body>
+</html>
