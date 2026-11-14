@@ -68,5 +68,5 @@ All settings, layouts, theme selections, and cached weather forecasts are stored
 ## 4. Contact Information
 
 If you have questions, feedback, or concerns regarding this Privacy Policy, please contact us at:  
-**Support Email:** support@tilelaunch.app  
-**Project Repository:** https://github.com/tilelaunch/launcher  
+**Support Email:** harisrana840@gmail.com  
+**Project Repository:** https://github.com/harisrana001/tileLaunch  
